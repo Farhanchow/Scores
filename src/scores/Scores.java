@@ -49,8 +49,8 @@ public class Scores {
         Date date = new Date();
         JFrame application = new JFrame();
         JPanel panel = new JPanel();
-        Color color = new Color (randomNumbers.nextInt(256), (randomNumbers.nextInt(256)),
-        (randomNumbers.nextInt(256)));
+        Color color = new Color (randomNumbers.nextInt(256), (randomNumbers.nextInt(256)), 
+        (randomNumbers.nextInt(256))); //To generate at random
         panel.setBackground(color);
         JLabel jlabel = new JLabel("The number of students: " + n + "\n");
         JLabel jlabel2 = new JLabel("The individual scores of the students: " + ListOfScores + "\n");
@@ -63,7 +63,7 @@ public class Scores {
         panel.add(jlabel4);
         panel.add(jlabel5);
         application.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
-        application.setSize (350, 350);
+        application.setSize (350, 350); // To display everything nice 
         application.add(panel);
         application.setVisible(true);
     }
