@@ -37,7 +37,7 @@ public class Scores {
         ListOfScores = new ArrayList<Integer>();
         for (i = 1; i <= n; i++) {
             String ScoresOfStudents = 
-                    JOptionPane.showInputDialog("Enter score for student # " + i);
+                    JOptionPane.showInputDialog("Please now Enter score for student # " + i);
             score = Integer.parseInt(ScoresOfStudents);
             ListOfScores.add(score);
             TotalScores += score;
